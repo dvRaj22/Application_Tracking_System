@@ -1,0 +1,45 @@
+{
+  "name": "mini-ats",
+  "version": "1.0.0",
+  "description": "Mini Applicant Tracking System - Full-stack web application with Kanban board and analytics dashboard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "server:build": "cd server && npm run build",
+    "client:build": "cd client && npm run build",
+    "build": "npm run server:build && npm run client:build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "ats",
+    "applicant-tracking",
+    "recruitment",
+    "kanban-board",
+    "analytics",
+    "react",
+    "nodejs",
+    "mongodb",
+    "fullstack"
+  ],
+  "author": "dvRaj22",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvRaj22/mini-ats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dvRaj22/mini-ats/issues"
+  },
+  "homepage": "https://github.com/dvRaj22/mini-ats#readme",
+  "dependencies": {
+    "lucide-react": "^0.539.0",
+    "recharts": "^3.1.2"
+  }
+}
