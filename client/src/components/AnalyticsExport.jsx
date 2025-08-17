@@ -57,7 +57,7 @@ const AnalyticsExport = ({ analyticsData, timeRange, exportRef }) => {
       const imgWidth = 297; // A4 width in mm
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       
-      // Add title
+      // title
       pdf.setFontSize(20);
       pdf.text(`ATS Analytics Report - ${timeRange.charAt(0).toUpperCase() + timeRange.slice(1)}`, 20, 20);
       

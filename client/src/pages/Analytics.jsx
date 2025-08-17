@@ -48,7 +48,6 @@ const Analytics = () => {
     return () => clearInterval(interval);
   }, [timeRange]);
 
-  // Initial data fetch
   useEffect(() => {
     fetchAnalyticsData();
   }, [timeRange, refreshTrigger]);
@@ -280,7 +279,6 @@ const Analytics = () => {
             <p className="text-sm text-gray-600 dark:text-gray-400">Total Applications</p>
           </div>
           
-          {/* Arrow */}
           <div className="flex items-center justify-center">
             <ArrowRight className="w-8 h-8 text-gray-400 dark:text-gray-500" />
           </div>
@@ -296,7 +294,6 @@ const Analytics = () => {
             <p className="text-sm text-gray-600 dark:text-gray-400">Applied → Interview</p>
           </div>
           
-          {/* Arrow */}
           <div className="flex items-center justify-center">
             <ArrowRight className="w-8 h-8 text-gray-400 dark:text-gray-500" />
           </div>
@@ -313,7 +310,6 @@ const Analytics = () => {
           </div>
         </div>
         
-        {/* Conversion Metrics */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">

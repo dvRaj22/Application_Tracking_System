@@ -50,7 +50,7 @@ const DraggableApplicationCard = ({ application, onEdit, onDelete, onViewPDF }) 
   const handleResumeClick = (e) => {
     e.stopPropagation();
     if (application.resumeLink) {
-      // Try to open in new tab, fallback to download
+      
       try {
         window.open(application.resumeLink, '_blank', 'noopener,noreferrer');
       } catch (error) {
@@ -193,7 +193,7 @@ const DraggableApplicationCard = ({ application, onEdit, onDelete, onViewPDF }) 
           </button>
         </div>
         
-        {/* Additional Info */}
+        {/* Additional Information */}
         <div className="text-xs text-gray-500 dark:text-gray-400">
           {application.recruiter && (
             <span className="block">Recruiter: {application.recruiter}</span>
